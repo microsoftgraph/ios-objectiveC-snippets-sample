@@ -43,11 +43,14 @@
     // start executing snippet
     [self.activityIndicatorView startAnimating];
     
-    self.snippets.delegate = self;
-   
-    IMP imp = [self.snippets methodForSelector:self.snippetInfo.action];
-    void (*func)(id, SEL) = (void *)imp;
-    func(self.snippets, self.snippetInfo.action);
+    if (self.snippets && self.snippetInfo) {
+        self.snippets.delegate = self;
+        
+        IMP imp = [self.snippets methodForSelector:self.snippetInfo.action];
+        void (*func)(id, SEL) = (void *)imp;
+        func(self.snippets, self.snippetInfo.action);
+    }
+
 }
 
 
