@@ -22,7 +22,7 @@ In addition, the sample uses [msgraph-sdk-ios-nxoauth2-adapter](https://github.c
 
  > **Note** The **msgraph-sdk-ios-nxoauth2-adapter** is a sample OAuth implementation for authentication in this app and meant for demonstration purposes.
 
-These snippets are simple and self-contained, and you can copy and paste them into your own code, whenever appropriate, or use them as a resource for learning how to use the Microsoft Graph SDK for iOS.
+These snippets are simple and self-contained, and you can copy and paste them into your own code, whenever appropriate, or use them as a resource for learning how to use the Microsoft Graph SDK for iOS. For a list of all the raw snippets used in this sample for reference, see [Sample operations list](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/wiki/Sample-Operations-List) in the wiki.
 
 **Note:** If possible, please use this sample with a "non-work" or test account. The sample does not always clean up the created objects in your mailbox and calendar. At this time you'll have to manually remove sample mails and calendar events. Also note that the snippets that get and send messages and that get, create, update, and delete events won't work with all personal accounts. These operations will eventually work when those accounts are updated to work with the v2 authentication endpoint.
 
@@ -77,6 +77,7 @@ This sample requires the following:
     > Note: For more information on permission scopes required to use this sample, see the below section **Running the sample.**
 5. Run the sample.
 
+<a name="run"></a>
 ## Running the sample
 
 When launched, the app displays a series of boxes representing common user tasks. These tasks can be run based on account type and permission level:
