@@ -116,7 +116,7 @@ This sample runs commands that create, read, update, or delete data. When runnin
 <a name="questions"></a>
 ## Questions and comments
 
-We'd love to get your feedback about the Microsoft Graph UWP Snippets  Library project. You can send your questions and suggestions to us in the [Issues](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/issues) section of this repository.
+We'd love to get your feedback about the Microsoft Graph iOS Objective C Snippets Sample project. You can send your questions and suggestions to us in the [Issues](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/issues) section of this repository.
 
 Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with [MicrosoftGraph].
 
