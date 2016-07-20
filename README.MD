@@ -110,8 +110,12 @@ Also, to see what snippets can be run against an admin, organization, or persona
 ##How the sample affects your tenant data
 This sample runs commands that create, read, update, or delete data. When running commands that delete or edit data, the sample creates test entities. The sample will leave behind some of these entities on your tenant.
 
+<a name="contributing"></a>
+## Contributing ##
 
+If you'd like to contribute to this sample, see [CONTRIBUTING.MD](/CONTRIBUTING.md).
 
+This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
 
 <a name="questions"></a>
 ## Questions and comments
@@ -130,5 +134,3 @@ Your feedback is important to us. Connect with us on [Stack Overflow](http://sta
 
 ## Copyright
 Copyright (c) 2016 Microsoft. All rights reserved.
-
-
