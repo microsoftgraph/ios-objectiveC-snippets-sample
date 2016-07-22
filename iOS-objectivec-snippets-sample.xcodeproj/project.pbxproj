@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4559AA4DBA425318AB6796FE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4410821193404FBADEC20629 /* libPods.a */; };
+		62F2DB1426201FA52AB6E2D0 /* libPods-iOS-objectivec-snippets-sample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC0E24CC77675B772252B6BA /* libPods-iOS-objectivec-snippets-sample.a */; };
 		D3045CCC1CDA6142002ED490 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D3045CCB1CDA6142002ED490 /* main.m */; };
 		D3045CCF1CDA6142002ED490 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3045CCE1CDA6142002ED490 /* AppDelegate.m */; };
 		D3045CD21CDA6142002ED490 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D3045CD11CDA6142002ED490 /* MasterViewController.m */; };
@@ -25,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		199BEE758AC6B36D7A6DB3E3 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		38D3275A60179A29C2090B9E /* Pods-iOS-objectivec-snippets-sample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-objectivec-snippets-sample.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-objectivec-snippets-sample/Pods-iOS-objectivec-snippets-sample.release.xcconfig"; sourceTree = "<group>"; };
 		4410821193404FBADEC20629 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		547BA2EB1041D43C4426C96D /* Pods-iOS-objectivec-snippets-sample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOS-objectivec-snippets-sample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOS-objectivec-snippets-sample/Pods-iOS-objectivec-snippets-sample.debug.xcconfig"; sourceTree = "<group>"; };
 		D0E4321A2FE03960894D9E3F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D3045CC71CDA6142002ED490 /* iOS-objectivec-snippets-sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-objectivec-snippets-sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3045CCB1CDA6142002ED490 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -50,6 +52,7 @@
 		D3FBFEFE1CEA860A00727130 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3FBFF001CEA86D500727130 /* ConnectViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConnectViewController.h; sourceTree = "<group>"; };
 		D3FBFF011CEA86D500727130 /* ConnectViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConnectViewController.m; sourceTree = "<group>"; };
+		EC0E24CC77675B772252B6BA /* libPods-iOS-objectivec-snippets-sample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-iOS-objectivec-snippets-sample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4559AA4DBA425318AB6796FE /* libPods.a in Frameworks */,
+				62F2DB1426201FA52AB6E2D0 /* libPods-iOS-objectivec-snippets-sample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				4410821193404FBADEC20629 /* libPods.a */,
+				EC0E24CC77675B772252B6BA /* libPods-iOS-objectivec-snippets-sample.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -77,6 +81,8 @@
 			children = (
 				199BEE758AC6B36D7A6DB3E3 /* Pods.debug.xcconfig */,
 				D0E4321A2FE03960894D9E3F /* Pods.release.xcconfig */,
+				547BA2EB1041D43C4426C96D /* Pods-iOS-objectivec-snippets-sample.debug.xcconfig */,
+				38D3275A60179A29C2090B9E /* Pods-iOS-objectivec-snippets-sample.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -175,12 +181,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3045CE11CDA6142002ED490 /* Build configuration list for PBXNativeTarget "iOS-objectivec-snippets-sample" */;
 			buildPhases = (
-				1307105058CE3CAE78EC62D2 /* Check Pods Manifest.lock */,
+				1307105058CE3CAE78EC62D2 /* [CP] Check Pods Manifest.lock */,
 				D3045CC31CDA6142002ED490 /* Sources */,
 				D3045CC41CDA6142002ED490 /* Frameworks */,
 				D3045CC51CDA6142002ED490 /* Resources */,
-				D3E8E306B532702599F3EDF1 /* Embed Pods Frameworks */,
-				ED6C90A7A71E101E16F3A620 /* Copy Pods Resources */,
+				D3E8E306B532702599F3EDF1 /* [CP] Embed Pods Frameworks */,
+				ED6C90A7A71E101E16F3A620 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -238,14 +244,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		1307105058CE3CAE78EC62D2 /* Check Pods Manifest.lock */ = {
+		1307105058CE3CAE78EC62D2 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,34 +259,34 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		D3E8E306B532702599F3EDF1 /* Embed Pods Frameworks */ = {
+		D3E8E306B532702599F3EDF1 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-objectivec-snippets-sample/Pods-iOS-objectivec-snippets-sample-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		ED6C90A7A71E101E16F3A620 /* Copy Pods Resources */ = {
+		ED6C90A7A71E101E16F3A620 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-iOS-objectivec-snippets-sample/Pods-iOS-objectivec-snippets-sample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -406,7 +412,7 @@
 		};
 		D3045CE21CDA6142002ED490 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 199BEE758AC6B36D7A6DB3E3 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 547BA2EB1041D43C4426C96D /* Pods-iOS-objectivec-snippets-sample.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS-objectivec-snippets-sample/Info.plist";
@@ -419,7 +425,7 @@
 		};
 		D3045CE31CDA6142002ED490 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D0E4321A2FE03960894D9E3F /* Pods.release.xcconfig */;
+			baseConfigurationReference = 38D3275A60179A29C2090B9E /* Pods-iOS-objectivec-snippets-sample.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "iOS-objectivec-snippets-sample/Info.plist";
