@@ -5,6 +5,7 @@
 * [Introduction](#introduction)
 * [Prerequisites](#prerequisites)
 * [Register and configure the app](#register)
+* [Enable keychain sharing](#keychain)
 * [Build and debug](#build)
 * [Running the sample](#run)
 * [How the sample affects your tenant data](#how-the-sample-affects-your-tenant-data)
@@ -51,6 +52,19 @@ This sample requires the following:
 6. Copy the Client Id (App Id) for later use. You'll need to enter this value into the sample app. The app id is a unique identifier for your app.   
 7. Select **Save**.  
 
+<a name="keychain"></a>
+## Enable keychain sharing
+ 
+For Xcode 8, you'll need to add the keychain group or your app will fail to access the keychain. 
+To add the keychain group:
+ 
+1. Select the project on the project manager panel in Xcode. (⌘ + 1).
+ 
+2. Select **iOS-objectivec-snippets-sample**.
+ 
+3. On the Capabilities tab, enable **Keychain Sharing**.
+ 
+4. Add **com.microsoft.iOS-objectivec-snippets-sample** to the Keychain Groups.
 
 <a name="build"></a>
 ## Build and debug ##
