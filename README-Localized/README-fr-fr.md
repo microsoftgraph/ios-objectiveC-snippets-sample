@@ -1,35 +1,36 @@
-# Exemple d’extraits de code Microsoft Graph iOS Objective C
+# <a name="microsoft-graph-ios-objective-c-snippets-sample"></a>Exemple d’extraits de code Microsoft Graph iOS Objective C
 
 **Sommaire**
 
 * [Introduction](#introduction)
-* [Conditions préalables](#conditions-préalables)
-* [Enregistrement et configuration de l’application](#enregistrement-et-configuration-de-lapplication)
-* [Création et débogage](#création-et-débogage)
-* [Exécution de l’exemple](#exécution-de-lexemple)
-* [Impact de l’exemple sur vos données client](#impact-de-lexemple-sur-vos-données-client)
-* [Questions et commentaires](#questions-et-commentaires)
-* [Ressources supplémentaires](#ressources-supplémentaires)
+* [Conditions préalables](#prerequisites)
+* [Enregistrement et configuration de l’application](#register)
+* [Activation du partage du trousseau](#keychain)
+* [Création et débogage](#build)
+* [Exécution de l’exemple](#run)
+* [Impact de l’exemple sur vos données client](#how-the-sample-affects-your-tenant-data)
+* [Questions et commentaires](#questions)
+* [Ressources supplémentaires](#additional-resources)
 
 <a name="introduction"></a>
-##Introduction
+##<a name="introduction"></a>Introduction
 
 Cet exemple contient un référentiel des extraits de code qui illustrent l’utilisation du kit de développement Microsoft Graph pour envoyer des messages électroniques, gérer les groupes et effectuer d’autres activités avec les données d’Office 365. Il utilise le [kit de développement logiciel Microsoft Graph pour iOS](https://github.com/microsoftgraph/msgraph-sdk-ios) pour exploiter les données renvoyées par Microsoft Graph.
 
 Ce référentiel vous montre comment accéder à plusieurs ressources, notamment Microsoft Azure Active Directory (AD) et les API d’Office 365, en envoyant des requêtes HTTP à l’API Microsoft Graph dans une application iOS. 
 
-En outre, l’exemple utilise [msgraph-sdk-ios-nxoauth2-adapter](https://github.com/microsoftgraph/msgraph-sdk-ios-nxoauth2-adapter) pour l’authentification. Pour effectuer des requêtes, vous devez fournir un **MSAuthenticationProvider** capable d’authentifier les requêtes HTTPS avec un jeton de support OAuth 2.0 approprié. Nous allons utiliser cette infrastructure pour un exemple d’implémentation de MSAuthenticationProvider qui peut être utilisé pour commencer rapidement votre projet.
+En outre, l’exemple utilise [msgraph-sdk-ios-nxoauth2-adapter](https://github.com/microsoftgraph/msgraph-sdk-ios-nxoauth2-adapter) pour l’authentification. Pour effectuer des requêtes, vous devez fournir un élément **MSAuthenticationProvider** capable d’authentifier les requêtes HTTPS avec un jeton de support OAuth 2.0 approprié. Nous allons utiliser cette infrastructure pour un exemple d’implémentation de MSAuthenticationProvider qui peut être utilisé pour commencer rapidement votre projet.
 
  > **Remarque** **msgraph-sdk-ios-nxoauth2-adapter** est un exemple d’implémentation OAuth pour l’authentification dans cette application. Il est fourni à titre de démonstration.
 
 Ces extraits sont simples et autonomes, et vous pouvez les copier-coller dans votre propre code, le cas échéant, ou les utiliser comme ressource d’apprentissage sur l’utilisation du kit de développement logiciel Microsoft Graph pour iOS. Pour obtenir la liste de tous les extraits bruts utilisés dans cet exemple à titre de référence, voir [Liste des exemples d’opérations](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/wiki/Sample-Operations-List) dans le site wiki.
 
-**Remarque :** Si possible, utilisez cet exemple avec un compte de test ou « non professionnel ». L’exemple ne nettoie pas toujours les objets créés dans votre boîte aux lettres et votre calendrier. À ce stade, vous devrez supprimer manuellement les exemples de messages électroniques et les événements de calendrier. Notez également que les extraits de code qui obtiennent et envoient des messages et qui obtiennent, créent, mettent à jour et suppriment des événements ne fonctionnent pas avec tous les comptes personnels. Ces opérations fonctionneront finalement lorsque ces comptes seront mis à jour pour fonctionner avec le point de terminaison d’authentification v2.
+**Remarque :** Si possible, utilisez cet exemple avec un compte de test ou « non professionnel ». L’exemple ne nettoie pas toujours les objets créés dans votre boîte aux lettres et votre calendrier. À ce stade, vous devrez supprimer manuellement les exemples de messages électroniques et les événements de calendrier. Notez également que les extraits de code qui obtiennent et envoient des messages et qui obtiennent, créent, mettent à jour et suppriment des événements qui ne fonctionnent pas avec tous les comptes personnels. Ces opérations fonctionneront finalement lorsque ces comptes seront mis à jour pour fonctionner avec le point de terminaison Azure AD v2.0.
 
  
 
 <a name="prerequisites"></a>
-## Conditions préalables ##
+## <a name="prerequisites"></a>Conditions préalables ##
 
 Cet exemple nécessite les éléments suivants :  
 * [Xcode](https://developer.apple.com/xcode/downloads/) d’Apple
@@ -41,7 +42,7 @@ Cet exemple nécessite les éléments suivants :
 
       
 <a name="register"></a>
-##Enregistrement et configuration de l’application
+##<a name="register-and-configure-the-app"></a>Enregistrement et configuration de l’application
 
 1. Connectez-vous au [portail d’inscription des applications](https://apps.dev.microsoft.com/) en utilisant votre compte personnel, professionnel ou scolaire.  
 2. Sélectionnez **Ajouter une application**.  
@@ -51,9 +52,21 @@ Cet exemple nécessite les éléments suivants :
 6. Copiez l’ID client (ID d’application) à des fins d’utilisation ultérieure. Vous devrez saisir cette valeur dans l’exemple d’application. L’ID d’application est un identificateur unique pour votre application.   
 7. Cliquez sur **Enregistrer**.  
 
+<a name="keychain"></a>
+## <a name="enable-keychain-sharing"></a>Activation du partage du trousseau
+ 
+Pour Xcode 8, vous devez ajouter le groupe de trousseau, sinon votre application ne pourra pas y accéder. Pour ajouter le groupe de trousseau :
+ 
+1. Sélectionnez le projet dans le volet du responsable de projet dans Xcode (⌘ + 1).
+ 
+2. Sélectionnez **iOS-objectivec-snippets-sample**.
+ 
+3. Sous l’onglet Fonctionnalités, activez **Partage du trousseau**.
+ 
+4. Ajoutez **com.microsoft.iOS-objectivec-snippets-sample** aux groupes de trousseau.
 
 <a name="build"></a>
-## Création et débogage ##
+## <a name="build-and-debug"></a>Création et débogage ##
 
 1. Cloner ce référentiel
 2. Utilisez CocoaPods pour importer les dépendances d’authentification et le kit de développement logiciel Microsoft Graph :
@@ -66,7 +79,7 @@ Cet exemple nécessite les éléments suivants :
 
         pod install
 
-   Pour plus d’informations, consultez **Utilisation de CocoaPods** dans [Ressources supplémentaires](#ressources-supplémentaires).
+   Pour plus d’informations, consultez **Utilisation de CocoaPods** dans [Ressources supplémentaires](#AdditionalResources).
 
 3. Ouvrez **O365-iOS-Microsoft-Graph-SDK.xcworkspace**.
 4. Ouvrez **AuthenticationConstants.m**. Vous verrez que l’**ID client** du processus d’inscription peut être ajouté à la partie supérieure du fichier :
@@ -78,7 +91,7 @@ Cet exemple nécessite les éléments suivants :
 5. Exécutez l’exemple.
 
 <a name="run"></a>
-## Exécution de l’exemple
+## <a name="running-the-sample"></a>Exécution de l’exemple
 
 Une fois lancée, l’application affiche une série de cases représentant les tâches courantes de l’utilisateur. Ces tâches peuvent être exécutées en fonction du niveau d’autorisations et du type de compte :
 
@@ -107,30 +120,30 @@ Vous pourrez effectuer plusieurs opérations simplement à l’aide des étendue
 En outre, pour savoir quels extraits peuvent être exécutés sur un compte administrateur, professionnel ou personnel, consultez Snippets Library/Snippets.m. Chaque description de l’extrait de code détaille le niveau d’accès.
 
 <a name="#how-the-sample-affects-your-tenant-data"></a>
-##Impact de l’exemple sur vos données client
+##<a name="how-the-sample-affects-your-tenant-data"></a>Impact de l’exemple sur vos données client
 Cet exemple exécute des commandes qui permettent de créer, lire, mettre à jour ou supprimer des données. Lorsque vous exécutez des commandes qui suppriment ou modifient des données, l’exemple crée des entités de test. L’exemple épargne certaines de ces entités sur votre client.
 
 <a name="contributing"></a>
-## Contribution ##
+## <a name="contributing"></a>Contribution ##
 
 Si vous souhaitez contribuer à cet exemple, voir [CONTRIBUTING.MD](/CONTRIBUTING.md).
 
 Ce projet a adopté le [code de conduite Microsoft Open Source](https://opensource.microsoft.com/codeofconduct/). Pour plus d’informations, reportez-vous à la [FAQ relative au code de conduite](https://opensource.microsoft.com/codeofconduct/faq/) ou contactez [opencode@microsoft.com](mailto:opencode@microsoft.com) pour toute question ou tout commentaire.
 
 <a name="questions"></a>
-## Questions et commentaires
+## <a name="questions-and-comments"></a>Questions et commentaires
 
 Nous serions ravis de connaître votre opinion sur l’exemple de projet d’extraits de code Microsoft Graph iOS Objective C. Vous pouvez nous faire part de vos questions et suggestions dans la rubrique [Problèmes](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/issues) de ce référentiel.
 
 Votre avis compte beaucoup pour nous. Communiquez avec nous sur [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Posez vos questions avec la balise [MicrosoftGraph].
 
 <a name="additional-resources"></a>
-## Ressources supplémentaires ##
+## <a name="additional-resources"></a>Ressources supplémentaires ##
 
-- [Présentation de Microsoft Graph](http://graph.microsoft.io)
+- [Présentation de Microsoft Graph](http://graph.microsoft.io)
 - [Exemples de code du développeur Office](http://dev.office.com/code-samples)
 - [Centre de développement Office](http://dev.office.com/)
 
 
-## Copyright
+## <a name="copyright"></a>Copyright
 Copyright (c) 2016 Microsoft. Tous droits réservés.
