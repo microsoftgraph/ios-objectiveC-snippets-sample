@@ -1,0 +1,19 @@
+### YamlMime:Sample
+sample:
+- name: Microsoft Graph iOS Objective C Snippets Sample
+  path: ''
+  description: This sample shows how to use the Microsoft Graph SDK to send email, manage groups, and perform other activities with Office 365 data.
+  readme: ''
+  generateZip: FALSE
+  isLive: TRUE
+  technologies:
+  - Microsoft Graph
+  azureDeploy: ''
+  author: bmitchell287
+  platforms: []
+  languages:
+  - Objective-C
+  extensions:
+    products:
+    - Office 365
+    scenarios: []
