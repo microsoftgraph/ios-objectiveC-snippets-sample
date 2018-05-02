@@ -33,7 +33,7 @@ These snippets are simple and self-contained, and you can copy and paste them in
 ## Prerequisites ##
 
 This sample requires the following:  
-* [Xcode](https://developer.apple.com/xcode/downloads/) from Apple
+* [XCode](https://developer.apple.com/xcode/downloads/) from Apple
 * Installation of [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html)  as a dependency manager.
 * A Microsoft work or personal email account such as Office 365, or outlook.com, hotmail.com, etc. You can sign up for [an Office 365 Developer subscription](https://aka.ms/devprogramsignup) that includes the resources that you need to start building Office 365 apps.
 * A client id from the registered app at [Microsoft Graph App Registration Portal](https://graph.microsoft.io/en-us/app-registration)
