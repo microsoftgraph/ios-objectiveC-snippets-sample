@@ -13,7 +13,7 @@
 * [Additional resources](#additional-resources)
 
 <a name="introduction"></a>
-##Introduction
+## Introduction
 
 This sample contains a repository of code snippets that show how to use the Microsoft Graph SDK to send email, manage groups, and perform other activities with Office 365 data. It uses the [Microsoft Graph SDK for iOS](https://github.com/microsoftgraph/msgraph-sdk-ios) to work with data returned by Microsoft Graph.
 
@@ -42,7 +42,7 @@ This sample requires the following:
 
       
 <a name="register"></a>
-##Register and configure the app
+## Register and configure the app
 
 1. Sign into the [App Registration Portal](https://apps.dev.microsoft.com/) using either your personal or work or school account.  
 2. Select **Add an app**.  
@@ -67,7 +67,7 @@ To add the keychain group:
 4. Add **com.microsoft.iOS-objectivec-snippets-sample** to the Keychain Groups.
 
 <a name="build"></a>
-## Build and debug ##
+## Build and debug  
 
 1. Clone this repository
 2. Use CocoaPods to import the Microsoft Graph SDK and authentication dependencies:
@@ -125,7 +125,7 @@ Also, to see what snippets can be run against an admin, organization, or persona
 This sample runs commands that create, read, update, or delete data. When running commands that delete or edit data, the sample creates test entities. The sample will leave behind some of these entities on your tenant.
 
 <a name="contributing"></a>
-## Contributing ##
+## Contributing  
 
 If you'd like to contribute to this sample, see [CONTRIBUTING.MD](/CONTRIBUTING.md).
 
@@ -139,7 +139,7 @@ We'd love to get your feedback about the Microsoft Graph iOS Objective C Snippet
 Your feedback is important to us. Connect with us on [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Tag your questions with [MicrosoftGraph].
 
 <a name="additional-resources"></a>
-## Additional resources ##
+## Additional resources  
 
 - [Microsoft Graph overview](http://graph.microsoft.io)
 - [Office developer code samples](http://dev.office.com/code-samples)
