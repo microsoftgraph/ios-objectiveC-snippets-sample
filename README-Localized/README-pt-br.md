@@ -13,7 +13,7 @@
 * [Recursos adicionais](#additional-resources)
 
 <a name="introduction"></a>
-##<a name="introduction"></a>Introdução
+## <a name="introduction"></a>Introdução
 
 Este exemplo contém um repositório de trechos de código que mostram como usar o SDK do Microsoft Graph SDK enviar emails, gerenciar grupos e realizar outras atividades com os dados do Office 365. O exemplo usa o [SDK do Microsoft Graph para iOS](https://github.com/microsoftgraph/msgraph-sdk-ios) para trabalhar com dados retornados pelo Microsoft Graph.
 
@@ -21,7 +21,7 @@ Este exemplo mostra como acessar vários recursos, incluindo o Microsoft Azure A
 
 Além disso, o exemplo usa [msgraph-sdk-ios-nxoauth2-adapter](https://github.com/microsoftgraph/msgraph-sdk-ios-nxoauth2-adapter) para autenticação. Para realizar solicitações de autenticação, é necessário fornecer um **MSAuthenticationProvider** para autenticar solicitações HTTPS com um token de portador OAuth 2.0 apropriado. Usaremos essa estrutura para uma implementação de exemplo de MSAuthenticationProvider que pode ser usada para acelerar seu projeto.
 
- > **Observação** O adaptador **msgraph-sdk-ios-nxoauth2-adapter** é uma implementação OAuth para autenticação de exemplo neste aplicativo e serve para demonstrações.
+ > **Observação** o adaptador **msgraph-sdk-ios-nxoauth2-adapter** é uma implementação OAuth para autenticação de exemplo neste aplicativo, e serve para demonstrações.
 
 Esses trechos são simples e autocontidos e você pode copiá-los e colá-los em seu próprio código, sempre que apropriado, ou usá-los como um recurso para aprender a usar o SDK do Microsoft Graph para iOS. Para obter uma lista de todos os trechos de código brutos usados neste exemplo para referência, consulte [Lista de operações de exemplo](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/wiki/Sample-Operations-List) na wiki.
 
@@ -32,7 +32,7 @@ Esses trechos são simples e autocontidos e você pode copiá-los e colá-los em
 <a name="prerequisites"></a>
 ## <a name="prerequisites"></a>Pré-requisitos ##
 
-Este exemplo requer o seguinte:  
+Esse exemplo requer o seguinte:  
 * [Xcode](https://developer.apple.com/xcode/downloads/) da Apple
 * Instalação do [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) como um gerente de dependências.
 * Uma conta de email comercial ou pessoal da Microsoft como o Office 365, ou outlook.com, hotmail.com, etc. Inscreva-se em uma [Assinatura do Office 365 para Desenvolvedor](https://aka.ms/devprogramsignup) que inclua os recursos necessários para começar a criar aplicativos do Office 365.
@@ -42,7 +42,7 @@ Este exemplo requer o seguinte:
 
       
 <a name="register"></a>
-##<a name="register-and-configure-the-app"></a>Registrar e configurar o aplicativo
+## <a name="register-and-configure-the-app"></a>Registrar e configurar o aplicativo
 
 1. Entre no [Portal de Registro do Aplicativo](https://apps.dev.microsoft.com/) usando sua conta pessoal ou sua conta comercial ou escolar.  
 2. Selecione **Adicionar um aplicativo**.  
@@ -57,7 +57,7 @@ Este exemplo requer o seguinte:
  
 Para o Xcode 8, você deve adicionar o grupo de chaves para que o aplicativo não falhe ao acessar a chave. Para adicionar o grupo de chaves:
  
-1. Escolha o projeto, no painel do gerente de projetos do Xcode. (⌘ + 1).
+1. Escolha o projeto, no painel do gerente de projetos do Xcode. (⌘+1).
  
 2. Escolha **iOS-objectivec-snippets-sample**.
  
@@ -66,7 +66,7 @@ Para o Xcode 8, você deve adicionar o grupo de chaves para que o aplicativo nã
 4. Adicione **com.microsoft.iOS-objectivec-snippets-sample** ao grupo de chaves.
 
 <a name="build"></a>
-## <a name="build-and-debug"></a>Compilar e depurar ##
+## <a name="build-and-debug"></a>Compilar e depurar  
 
 1. Clonar este repositório
 2. Use o CocoaPods para importar as dependências de autenticação e o SDK do Microsoft Graph:
@@ -124,7 +124,7 @@ Além disso, para ver quais trechos de código podem ser executados em uma conta
 Este exemplo executa comandos que criam, leem, atualizam ou excluem dados. Durante a execução de comandos que excluem ou editam dados, o exemplo cria entidades de teste. O exemplo deixará algumas dessas entidades em seu locatário.
 
 <a name="contributing"></a>
-## <a name="contributing"></a>Colaboração ##
+## <a name="contributing"></a>Colaboração  
 
 Se quiser contribuir para esse exemplo, confira [CONTRIBUTING.MD](/CONTRIBUTING.md).
 
@@ -138,7 +138,7 @@ Adoraríamos receber seus comentários sobre o projeto Exemplo de Trechos de Có
 Seus comentários são importantes para nós. Junte-se a nós na página [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Marque suas perguntas com [MicrosoftGraph].
 
 <a name="additional-resources"></a>
-## <a name="additional-resources"></a>Recursos adicionais ##
+## <a name="additional-resources"></a>Recursos adicionais  
 
 - [Visão geral do Microsoft Graph](http://graph.microsoft.io)
 - [Exemplos de código para desenvolvedores do Office](http://dev.office.com/code-samples)

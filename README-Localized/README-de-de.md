@@ -13,7 +13,7 @@
 * [Weitere Ressourcen](#additional-resources)
 
 <a name="introduction"></a>
-##<a name="introduction"></a>Einführung
+## <a name="introduction"></a>Einführung
 
 Dieses Beispiel enthält ein Repository von Codeausschnitten, die zeigen, wie das Microsoft Graph-SDK zum Senden von E-Mails, Verwalten von Gruppen und Ausführen anderer Aktivitäten mit Office 365-Daten verwendet wird. Es verwendet das [Microsoft Graph-SDK für iOS](https://github.com/microsoftgraph/msgraph-sdk-ios), um mit Daten zu arbeiten, die von Microsoft Graph zurückgegeben werden.
 
@@ -21,7 +21,7 @@ In diesem Repository wird gezeigt, wie Sie auf mehrere Ressourcen, einschließli
 
 Außerdem verwendet das Beispiel [msgraph-sdk-ios-nxoauth2-adapter](https://github.com/microsoftgraph/msgraph-sdk-ios-nxoauth2-adapter) für die Authentifizierung. Um Anforderungen auszuführen, muss ein **MSAuthenticationProvider** bereitgestellt werden, der HTTPS-Anforderungen mit einem entsprechenden OAuth 2.0-Bearertoken authentifizieren kann. Wir verwenden dieses Framework für eine Beispielimplementierung von MSAuthenticationProvider, die Sie für einen Schnelleinstieg in Ihr Projekt verwenden können.
 
- > Hinweis **msgraph-sdk-ios-nxoauth2-adapter** ist eine Beispielimplementierung von OAuth für die Authentifizierung in dieser App und dient Demonstrationszwecken.
+ > **Hinweis** **msgraph-sdk-ios-nxoauth2-adapter** ist eine Beispielimplementierung von OAuth für die Authentifizierung in dieser App und dient Demonstrationszwecken.
 
 Diese Ausschnitte sind einfach und eigenständig, und Sie können sie ggf. in Ihren eigenen Code kopieren und einfügen oder als Ressource verwenden, um zu lernen, wie das Microsoft Graph-SDK für iOS verwendet wird. Eine Liste aller Rohcodeausschnitte, die in diesem Beispiel als Referenz verwendet werden, finden Sie im Wiki in der [Beispielvorgangsliste](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/wiki/Sample-Operations-List).
 
@@ -42,7 +42,7 @@ Für dieses Beispiel ist Folgendes erforderlich:
 
       
 <a name="register"></a>
-##<a name="register-and-configure-the-app"></a>Registrieren und Konfigurieren der App
+## <a name="register-and-configure-the-app"></a>Registrieren und Konfigurieren der App
 
 1. Melden Sie sich beim [App-Registrierungsportal](https://apps.dev.microsoft.com/) entweder mit Ihrem persönlichen oder geschäftlichen Konto oder mit Ihrem Schulkonto an.  
 2. Klicken Sie auf **App hinzufügen**.  
@@ -66,7 +66,7 @@ Für Xcode 8 müssen Sie die Schlüsselbundgruppe hinzufügen, sonst kann Ihre A
 4. Fügen Sie der Schlüsselbundgruppe **com.microsoft.iOS-objectivec-snippets-sample** hinzu.
 
 <a name="build"></a>
-## <a name="build-and-debug"></a>Erstellen und Debuggen ##
+## <a name="build-and-debug"></a>Erstellen und Debuggen  
 
 1. Klonen dieses Repositorys
 2. Verwenden Sie CocoaPods, um das Microsoft Graph-SDK und Authentifizierungsabhängigkeiten zu importieren:
@@ -95,7 +95,7 @@ Für Xcode 8 müssen Sie die Schlüsselbundgruppe hinzufügen, sonst kann Ihre A
 
 Nach dem Start wird in der App eine Reihe von Feldern angezeigt, die allgemeine Benutzeraufgaben darstellen. Diese Aufgaben können basierend auf Kontotyp und Berechtigungsstufe ausgeführt werden:
 
-- Aufgaben, die sowohl für Geschäfts- oder Schulkonten als auch für persönliche Konten gelten, z. B. das Abrufen und Senden von E-Mails, das Erstellen von Dateien usw.
+- Aufgaben, die sowohl für Geschäfts- oder Schulkonten als auch für persönliche Konten gelten, z. B. das Abrufen und Seden von E-Mails, das Erstellen von Dateien usw.
 - Aufgaben, die nur für Geschäfts- oder Schulkonten gelten, z. B. das Abrufen eines Vorgesetzten eines Benutzers oder eines Kontofotos.
 - Aufgaben, die nur für Geschäfts- oder Schulkonten mit Administratorberechtigungen gelten, z. B. das Abrufen von Gruppenmitgliedern oder das Erstellen neuer Benutzerkonten.
 
@@ -124,7 +124,7 @@ Informationen darüber, welche Ausschnitte für einen Administrator, eine Organi
 In diesem Beispiel werden Befehle ausgeführt, mit denen Daten erstellt, aktualisiert oder gelöscht werden. Wenn Sie Befehle ausführen, die Daten löschen oder bearbeiten, erstellt das Beispiel Testentitäten. In dem Beispiel werden einige dieser Entitäten auf Ihrem Mandanten hinterlassen.
 
 <a name="contributing"></a>
-## <a name="contributing"></a>Mitwirkung ##
+## <a name="contributing"></a>Mitwirkung  
 
 Wenn Sie einen Beitrag zu diesem Beispiel leisten möchten, finden Sie unter [CONTRIBUTING.MD](/CONTRIBUTING.md) weitere Informationen.
 
@@ -138,7 +138,7 @@ Wir schätzen Ihr Feedback hinsichtlich des Microsoft Graph UWP Snippets Library
 Ihr Feedback ist uns wichtig. Nehmen Sie unter [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph) Kontakt mit uns auf. Taggen Sie Ihre Fragen mit [MicrosoftGraph].
 
 <a name="additional-resources"></a>
-## <a name="additional-resources"></a>Zusätzliche Ressourcen ##
+## <a name="additional-resources"></a>Zusätzliche Ressourcen  
 
 - [Microsoft Graph-Übersicht](http://graph.microsoft.io)
 - [Office-Entwicklercodebeispiele](http://dev.office.com/code-samples)

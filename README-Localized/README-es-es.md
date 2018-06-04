@@ -13,7 +13,7 @@
 * [Recursos adicionales](#additional-resources)
 
 <a name="introduction"></a>
-##<a name="introduction"></a>Introducción
+## <a name="introduction"></a>Introducción
 
 Este ejemplo contiene un repositorio de fragmentos de código que muestran cómo usar Microsoft Graph SDK para enviar correos electrónicos, administrar grupos y realizar otras actividades con los datos de Office 365. Usa [Microsoft Graph SDK para iOS](https://github.com/microsoftgraph/msgraph-sdk-ios) para trabajar con los datos devueltos por Microsoft Graph.
 
@@ -33,7 +33,7 @@ Estos fragmentos de código son simples e independientes, y puede copiarlos y pe
 ## <a name="prerequisites"></a>Requisitos previos ##
 
 Este ejemplo necesita lo siguiente:  
-* [Xcode](https://developer.apple.com/xcode/downloads/) de Apple
+* [XCode](https://developer.apple.com/xcode/downloads/) de Apple
 * Instalación de [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) como administrador de dependencias.
 * Una cuenta de correo electrónico personal o profesional de Microsoft como Office 365, outlook.com, hotmail.com, etc. Puede registrarse para [una suscripción de Office 365 Developer](https://aka.ms/devprogramsignup), que incluye los recursos que necesita para comenzar a crear aplicaciones de Office 365.
 * Un Id. de cliente de la aplicación registrada en el [Portal de registro de la aplicación de Microsoft Graph](https://graph.microsoft.io/en-us/app-registration)
@@ -42,7 +42,7 @@ Este ejemplo necesita lo siguiente:
 
       
 <a name="register"></a>
-##<a name="register-and-configure-the-app"></a>Registrar y configurar la aplicación
+## <a name="register-and-configure-the-app"></a>Registrar y configurar la aplicación
 
 1. Inicie sesión en el [Portal de registro de la aplicación](https://apps.dev.microsoft.com/) mediante su cuenta personal, profesional o educativa.  
 2. Seleccione **Agregar una aplicación**.  
@@ -53,7 +53,7 @@ Este ejemplo necesita lo siguiente:
 7. Seleccione **Guardar**.  
 
 <a name="keychain"></a>
-## <a name="enable-keychain-sharing"></a>Habilitar el uso compartido de llaves
+## <a name="enable-keychain-sharing"></a>Habilitar el uso compartido de cadenas de claves
  
 Para Xcode 8, necesitará agregar el grupo de llaves o la aplicación no podrá acceder a la llave. Para agregar el grupo de llaves:
  
@@ -66,7 +66,7 @@ Para Xcode 8, necesitará agregar el grupo de llaves o la aplicación no podrá 
 4. Agregue **com.microsoft.iOS-objectivec-snippets-sample** a los grupos de llaves.
 
 <a name="build"></a>
-## <a name="build-and-debug"></a>Compilar y depurar ##
+## <a name="build-and-debug"></a>Compilar y depurar  
 
 1. Clone este repositorio.
 2. Use CocoaPods para importar el SDK de Microsoft Graph y las dependencias de autenticación:
@@ -124,7 +124,7 @@ Además, para ver qué fragmentos de código se pueden ejecutar con una cuenta d
 Este ejemplo ejecuta comandos que crean, leen, actualizan o eliminan datos. Cuando ejecuta comandos que eliminan o modifican datos, el ejemplo crea entidades de prueba. El ejemplo dejará atrás algunas de estas entidades en su inquilino.
 
 <a name="contributing"></a>
-## <a name="contributing"></a>Colaboradores ##
+## <a name="contributing"></a>Colaboradores  
 
 Si le gustaría contribuir a este ejemplo, consulte [CONTRIBUTING.MD](/CONTRIBUTING.md).
 
@@ -135,10 +135,10 @@ Este proyecto ha adoptado el [Microsoft Open Source Code of Conduct](https://ope
 
 Nos encantaría recibir sus comentarios acerca del proyecto del ejemplo de fragmentos de código Objective C para iOS de Microsoft Graph. Puede enviarnos sus preguntas y sugerencias a través de la sección [Problemas](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/issues) de este repositorio.
 
-Sus comentarios son importantes para nosotros. Conecte con nosotros en [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Etiquete sus preguntas con [MicrosoftGraph].
+Su opinión es importante para nosotros. Conecte con nosotros en [Desbordamiento de pila](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Etiquete sus preguntas con [MicrosoftGraph].
 
 <a name="additional-resources"></a>
-## <a name="additional-resources"></a>Recursos adicionales ##
+## <a name="additional-resources"></a>Recursos adicionales  
 
 - [Información general de Microsoft Graph](http://graph.microsoft.io)
 - [Ejemplos de código de Office Developer](http://dev.office.com/code-samples)

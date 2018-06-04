@@ -13,7 +13,7 @@
 * [Дополнительные ресурсы](#additional-resources)
 
 <a name="introduction"></a>
-##<a name="introduction"></a>Введение
+## <a name="introduction"></a>Введение
 
 Этот пример содержит репозиторий фрагментов кода, которые показывают, как использовать пакет SDK Microsoft Graph, чтобы отправлять сообщения электронной почты, управлять группами и выполнять другие действия с данными Office 365. Для работы с данными, возвращаемыми Microsoft Graph, используется [пакет SDK Microsoft Graph для iOS](https://github.com/microsoftgraph/msgraph-sdk-ios).
 
@@ -42,7 +42,7 @@
 
       
 <a name="register"></a>
-##<a name="register-and-configure-the-app"></a>Регистрация и настройка приложения
+## <a name="register-and-configure-the-app"></a>Регистрация и настройка приложения
 
 1. Войдите на [портал регистрации приложений](https://apps.dev.microsoft.com/) с помощью личной, рабочей или учебной учетной записи.  
 2. Выберите пункт **Добавить приложение**.  
@@ -57,7 +57,7 @@
  
 Для Xcode 8 необходимо добавить группу цепочки ключей. В противном случае приложению не удастся получить доступ к цепочке ключей. Чтобы добавить группу цепочки ключей:
  
-1. На панели управления проектом в Xcode выберите нужный проект. (Клавиши ⌘+1).
+1. На панели управления проектом в Xcode выберите нужный проект (клавиши ⌘+1).
  
 2. Выберите **iOS-objectivec-snippets-sample**.
  
@@ -66,7 +66,7 @@
 4. В группы цепочки ключей добавьте **com.microsoft.iOS-objectivec-snippets-sample**.
 
 <a name="build"></a>
-## <a name="build-and-debug"></a>Сборка и отладка ##
+## <a name="build-and-debug"></a>Сборка и отладка  
 
 1. Клонируйте этот репозиторий
 2. Импортируйте зависимости пакета SDK Microsoft Graph и проверки подлинности с помощью CocoaPods:
@@ -79,7 +79,7 @@
 
         pod install
 
-   Чтобы получить дополнительные сведения, выберите ссылку **Использование CocoaPods** в разделе [Дополнительные ресурсы](#AdditionalResources).
+   Для получения дополнительных сведений выберите ссылку **Использование CocoaPods** в разделе [Дополнительные ресурсы](#AdditionalResources).
 
 3. Откройте **O365-iOS-Microsoft-Graph-SDK.xcworkspace**.
 4. Откройте файл **AuthenticationConstants.m**. Вы увидите, что в верхнюю часть файла можно добавить **идентификатор клиента**, скопированный в ходе регистрации.
@@ -91,7 +91,7 @@
 5. Запустите пример.
 
 <a name="run"></a>
-## <a name="running-the-sample"></a>Выполнение примера
+## <a name="running-the-sample"></a>Запуск приложения
 
 При запуске приложения отображается набор полей, представляющих собой типичные задачи пользователя. Эти задачи можно выполнять в зависимости от типа учетной записи и уровня разрешений.
 
@@ -124,7 +124,7 @@
 В этом примере выполняются команды по созданию, чтению, обновлению и удалению данных. При выполнении команд по удалению или изменению данных пример создает тестовые сущности. Пример проигнорирует некоторые из этих сущностей в клиенте.
 
 <a name="contributing"></a>
-## <a name="contributing"></a>Участие ##
+## <a name="contributing"></a>Помощь  
 
 Если вы хотите добавить код в этот пример, просмотрите статью [CONTRIBUTING.MD](/CONTRIBUTING.md).
 
@@ -135,10 +135,10 @@
 
 Мы будем рады получить ваши отзывы о проекте примера фрагментов кода на языке Objective C для iOS для Microsoft Graph. Вы можете отправлять нам вопросы и предложения на вкладке [Issues](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/issues) (Проблемы) этого репозитория.
 
-Ваше мнение важно для нас. Для связи с нами используйте сайт [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Помечайте свои вопросы тегом [MicrosoftGraph].
+Ваш отзыв важен для нас. Для связи с нами используйте сайт [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Помечайте свои вопросы тегом [MicrosoftGraph].
 
 <a name="additional-resources"></a>
-## <a name="additional-resources"></a>Дополнительные ресурсы ##
+## <a name="additional-resources"></a>Дополнительные ресурсы  
 
 - [Общие сведения о Microsoft Graph](http://graph.microsoft.io)
 - [Примеры кода приложений для Office](http://dev.office.com/code-samples)
