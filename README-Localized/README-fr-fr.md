@@ -13,7 +13,7 @@
 * [Ressources supplémentaires](#additional-resources)
 
 <a name="introduction"></a>
-##<a name="introduction"></a>Introduction
+## <a name="introduction"></a>Introduction
 
 Cet exemple contient un référentiel des extraits de code qui illustrent l’utilisation du kit de développement Microsoft Graph pour envoyer des messages électroniques, gérer les groupes et effectuer d’autres activités avec les données d’Office 365. Il utilise le [kit de développement logiciel Microsoft Graph pour iOS](https://github.com/microsoftgraph/msgraph-sdk-ios) pour exploiter les données renvoyées par Microsoft Graph.
 
@@ -21,7 +21,7 @@ Ce référentiel vous montre comment accéder à plusieurs ressources, notamment
 
 En outre, l’exemple utilise [msgraph-sdk-ios-nxoauth2-adapter](https://github.com/microsoftgraph/msgraph-sdk-ios-nxoauth2-adapter) pour l’authentification. Pour effectuer des requêtes, vous devez fournir un élément **MSAuthenticationProvider** capable d’authentifier les requêtes HTTPS avec un jeton de support OAuth 2.0 approprié. Nous allons utiliser cette infrastructure pour un exemple d’implémentation de MSAuthenticationProvider qui peut être utilisé pour commencer rapidement votre projet.
 
- > **Remarque** **msgraph-sdk-ios-nxoauth2-adapter** est un exemple d’implémentation OAuth pour l’authentification dans cette application. Il est fourni à titre de démonstration.
+ > **Remarque :** **msgraph-sdk-ios-nxoauth2-adapter** est un exemple d’implémentation OAuth pour l’authentification dans cette application. Il est fourni à titre de démonstration.
 
 Ces extraits sont simples et autonomes, et vous pouvez les copier-coller dans votre propre code, le cas échéant, ou les utiliser comme ressource d’apprentissage sur l’utilisation du kit de développement logiciel Microsoft Graph pour iOS. Pour obtenir la liste de tous les extraits bruts utilisés dans cet exemple à titre de référence, voir [Liste des exemples d’opérations](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/wiki/Sample-Operations-List) dans le site wiki.
 
@@ -33,8 +33,8 @@ Ces extraits sont simples et autonomes, et vous pouvez les copier-coller dans vo
 ## <a name="prerequisites"></a>Conditions préalables ##
 
 Cet exemple nécessite les éléments suivants :  
-* [Xcode](https://developer.apple.com/xcode/downloads/) d’Apple
-* Installation de [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) comme gestionnaire de dépendances.
+* [XCode](https://developer.apple.com/xcode/downloads/) d’Apple
+* Installation de [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) comme gestionnaire de dépendances
 * Un compte de messagerie professionnel ou personnel Microsoft comme Office 365 ou outlook.com, hotmail.com, etc. Vous pouvez vous inscrire à [Office 365 Developer](https://aka.ms/devprogramsignup) pour accéder aux ressources dont vous avez besoin afin de commencer à créer des applications Office 365.
 * Un ID client de l’application enregistrée auprès du [portail d’inscription de l’application Microsoft Graph](https://graph.microsoft.io/en-us/app-registration)
 * Comme indiqué ci-dessus, pour effectuer des requêtes d’authentification, vous devez fournir un **MSAuthenticationProvider** capable d’authentifier les requêtes HTTPS avec un jeton de support OAuth 2.0 approprié. 
@@ -42,7 +42,7 @@ Cet exemple nécessite les éléments suivants :
 
       
 <a name="register"></a>
-##<a name="register-and-configure-the-app"></a>Enregistrement et configuration de l’application
+## <a name="register-and-configure-the-app"></a>Enregistrement et configuration de l’application
 
 1. Connectez-vous au [portail d’inscription des applications](https://apps.dev.microsoft.com/) en utilisant votre compte personnel, professionnel ou scolaire.  
 2. Sélectionnez **Ajouter une application**.  
@@ -66,7 +66,7 @@ Pour Xcode 8, vous devez ajouter le groupe de trousseau, sinon votre applicatio
 4. Ajoutez **com.microsoft.iOS-objectivec-snippets-sample** aux groupes de trousseau.
 
 <a name="build"></a>
-## <a name="build-and-debug"></a>Création et débogage ##
+## <a name="build-and-debug"></a>Création et débogage  
 
 1. Cloner ce référentiel
 2. Utilisez CocoaPods pour importer les dépendances d’authentification et le kit de développement logiciel Microsoft Graph :
@@ -79,7 +79,7 @@ Pour Xcode 8, vous devez ajouter le groupe de trousseau, sinon votre applicatio
 
         pod install
 
-   Pour plus d’informations, consultez **Utilisation de CocoaPods** dans [Ressources supplémentaires](#AdditionalResources).
+   Pour plus d’informations, consultez la ressource **Utilisation de CocoaPods** dans [Ressources supplémentaires](#AdditionalResources).
 
 3. Ouvrez **O365-iOS-Microsoft-Graph-SDK.xcworkspace**.
 4. Ouvrez **AuthenticationConstants.m**. Vous verrez que l’**ID client** du processus d’inscription peut être ajouté à la partie supérieure du fichier :
@@ -124,7 +124,7 @@ En outre, pour savoir quels extraits peuvent être exécutés sur un compte admi
 Cet exemple exécute des commandes qui permettent de créer, lire, mettre à jour ou supprimer des données. Lorsque vous exécutez des commandes qui suppriment ou modifient des données, l’exemple crée des entités de test. L’exemple épargne certaines de ces entités sur votre client.
 
 <a name="contributing"></a>
-## <a name="contributing"></a>Contribution ##
+## <a name="contributing"></a>Contribution  
 
 Si vous souhaitez contribuer à cet exemple, voir [CONTRIBUTING.MD](/CONTRIBUTING.md).
 
@@ -138,7 +138,7 @@ Nous serions ravis de connaître votre opinion sur l’exemple de projet d’ext
 Votre avis compte beaucoup pour nous. Communiquez avec nous sur [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph). Posez vos questions avec la balise [MicrosoftGraph].
 
 <a name="additional-resources"></a>
-## <a name="additional-resources"></a>Ressources supplémentaires ##
+## <a name="additional-resources"></a>Ressources supplémentaires  
 
 - [Présentation de Microsoft Graph](http://graph.microsoft.io)
 - [Exemples de code du développeur Office](http://dev.office.com/code-samples)

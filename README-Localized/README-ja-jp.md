@@ -1,4 +1,4 @@
-﻿# <a name="microsoft-graph-ios-objective-c-snippets-sample"></a>Microsoft Graph iOS Objective C スニペットのサンプル
+# <a name="microsoft-graph-ios-objective-c-snippets-sample"></a>Microsoft Graph iOS Objective C スニペットのサンプル
 
 **目次**
 
@@ -13,7 +13,7 @@
 * [その他のリソース](#additional-resources)
 
 <a name="introduction"></a>
-##<a name="introduction"></a>はじめに
+## <a name="introduction"></a>はじめに
 
 このサンプルには、メールの送信、グループの管理、および Office 365 データを使用した他のアクティビティの実行に Microsoft Graph SDK を使用する方法を示すコード スニペットのリポジトリが含まれています。[Microsoft Graph SDK for iOS](https://github.com/microsoftgraph/msgraph-sdk-ios) を使用して、Microsoft Graph が返すデータを操作します。
 
@@ -25,14 +25,14 @@
 
 これらのスニペットは、簡潔な自己完結型であり、必要に応じて、コピーして独自のコードに貼り付けたり、Microsoft Graph SDK for iOS の使用方法を学習するためのリソースとして使用したりすることができます。参照用にこのサンプルで使用されるすべての未加工のスニペットの一覧については、Wiki の「[サンプル操作一覧](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/wiki/Sample-Operations-List)」を参照してください。
 
-**注:**可能であれば、"職場以外"のアカウントまたはテスト アカウントでこのサンプルを使用してください。サンプルでは、メールボックスと予定表で作成されたオブジェクトが常にクリーンアップされるとは限りません。現時点では、手動でサンプルのメールと予定表イベントを削除する必要があります。また、メッセージを送受信し、イベントを取得、作成、更新および削除するスニペットは、一部の個人用アカウントでは操作できないことにも注意してください。これらの操作は、それらのアカウントが更新されて Azure AD v2.0 認証エンドポイントで操作できるようになったときに、最終的に機能するようになります。
+**注:** 可能であれば、"職場以外"のアカウントまたはテスト アカウントでこのサンプルを使用してください。サンプルでは、メールボックスと予定表で作成されたオブジェクトが常にクリーンアップされるとは限りません。現時点では、手動でサンプルのメールと予定表イベントを削除する必要があります。また、メッセージを送受信し、イベントを取得、作成、更新および削除するスニペットは、一部の個人用アカウントでは操作できないことにも注意してください。これらの操作は、それらのアカウントが更新されて Azure AD v2.0 認証エンドポイントで操作できるようになったときに、最終的に機能するようになります。
 
  
 
 <a name="prerequisites"></a>
 ## <a name="prerequisites"></a>前提条件 ##
 
-このサンプルを実行するには次のものが必要です:  
+このサンプルを実行するには次のものが必要です。  
 * Apple 社の [Xcode](https://developer.apple.com/xcode/downloads/)
 * 依存関係マネージャーとしての [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) のインストール。
 * Office 365、outlook.com、hotmail.com などの、Microsoft の職場または個人用のメール アカウント。Office 365 アプリのビルドを開始するために必要なリソースを含む、[Office 365 Developer サブスクリプション](https://aka.ms/devprogramsignup)にサインアップできます。
@@ -42,7 +42,7 @@
 
       
 <a name="register"></a>
-##<a name="register-and-configure-the-app"></a>アプリを登録して構成する
+## <a name="register-and-configure-the-app"></a>アプリを登録して構成する
 
 1. 個人用アカウント、あるいは職場または学校アカウントのいずれかを使用して、[アプリ登録ポータル](https://apps.dev.microsoft.com/)にサインインします。  
 2. **[アプリの追加]** を選択します。  
@@ -66,7 +66,7 @@ Xcode 8 には、キーチェーンのグループを追加する必要があり
 4. **com.microsoft.iOS-objectivec-snippets-sample** をキーチェーンのグループに追加します。
 
 <a name="build"></a>
-## <a name="build-and-debug"></a>ビルドとデバッグ ##
+## <a name="build-and-debug"></a>ビルドとデバッグ  
 
 1. このリポジトリの複製を作成する
 2. CocoaPods を使用して、Microsoft Graph SDK と認証の依存関係をインポートします:
@@ -79,7 +79,7 @@ Xcode 8 には、キーチェーンのグループを追加する必要があり
 
         pod install
 
-   詳細については、[その他の技術情報](#AdditionalResources)の「**CocoaPods を使う**」を参照してください
+   詳細については、[その他のリソース](#AdditionalResources)の「**CocoaPods を使う**」を参照してください
 
 3. **O365-iOS-Microsoft-Graph-SDK.xcworkspace** を開きます
 4. **AuthenticationConstants.m** を開きます。登録プロセスの **ClientID** がファイルの一番上に追加されていることが分かります。:
@@ -124,7 +124,7 @@ Xcode 8 には、キーチェーンのグループを追加する必要があり
 このサンプルでは、データを作成、読み取り、更新、または削除するコマンドを実行します。データを削除、または編集するコマンドを実行すると、サンプルではテスト エンティティが作成されます。サンプルでは、これらの一部のエンティティが削除されずにテナントに残ります。
 
 <a name="contributing"></a>
-## <a name="contributing"></a>投稿 ##
+## <a name="contributing"></a>投稿  
 
 このサンプルに投稿する場合は、[CONTRIBUTING.MD](/CONTRIBUTING.md) を参照してください。
 
@@ -135,10 +135,10 @@ Xcode 8 には、キーチェーンのグループを追加する必要があり
 
 Microsoft Graph iOS Objective C スニペットのサンプル プロジェクトに関するフィードバックをお寄せください。質問や提案につきましては、このリポジトリの「[問題](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/issues)」セクションで送信できます。
 
-お客様からのフィードバックを重視しています。[Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph)でご連絡いただけます。ご質問には [MicrosoftGraph] のタグを付けてください。
+お客様からのフィードバックを重視しています。[スタック オーバーフロー](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph)でご連絡いただけます。ご質問には [MicrosoftGraph] のタグを付けてください。
 
 <a name="additional-resources"></a>
-## <a name="additional-resources"></a>追加リソース ##
+## <a name="additional-resources"></a>追加リソース  
 
 - [Microsoft Graph の概要](http://graph.microsoft.io)
 - [Office 開発者向けコード サンプル](http://dev.office.com/code-samples)
@@ -146,4 +146,4 @@ Microsoft Graph iOS Objective C スニペットのサンプル プロジェク�
 
 
 ## <a name="copyright"></a>著作権
-Copyright (c) 2016 Microsoft.All rights reserved.
+Copyright (c) 2016 Microsoft. All rights reserved.

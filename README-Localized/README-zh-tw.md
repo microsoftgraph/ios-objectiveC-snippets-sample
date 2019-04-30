@@ -13,7 +13,7 @@
 * [其他資源](#additional-resources)
 
 <a name="introduction"></a>
-##<a name="introduction"></a>簡介
+## <a name="introduction"></a>簡介
 
 這個範例包含程式碼片段的儲存機制，顯示如何使用 Microsoft Graph SDK 來傳送電子郵件、管理群組，以及執行其他使用 Office 365 資料的活動。它會使用 [Microsoft Graph SDK for iOS](https://github.com/microsoftgraph/msgraph-sdk-ios)，使用 Microsoft Graph 所傳回的資料。
 
@@ -25,7 +25,7 @@
 
 這些程式碼片段簡單且獨立，而且您可以在適當時，複製並貼到自己的程式碼，或使用它們做為資源來學習如何使用 Microsoft Graph SDK for iOS。如需這個範例中用來參考的所有原始程式碼片段的清單，請參閱 wiki 中的[範例作業清單](https://github.com/microsoftgraph/iOS-objectiveC-snippets-sample/wiki/Sample-Operations-List)。
 
-**附註︰**如果可能的話，請以「非工作」或測試帳戶來使用這個範例。範例不會一律清除您的信箱和行事曆中建立的物件。目前，您必須手動移除範例郵件及行事曆事件。另請注意取得和傳送訊息的程式碼片段，以及取得、建立、更新和刪除事件的程式碼片段不適用於所有個人帳戶。當這些帳戶升級為使用 Azure AD v2.0 驗證端點時，這些作業最終可以運作。
+**附註︰** 如果可能的話，請以「非工作」或測試帳戶來使用這個範例。範例不會一律清除您的信箱和行事曆中建立的物件。目前，您必須手動移除範例郵件及行事曆事件。另請注意取得和傳送訊息的程式碼片段，以及取得、建立、更新和刪除事件的程式碼片段不適用於所有個人帳戶。當這些帳戶升級為使用 Azure AD v2.0 驗證端點時，這些作業最終可以運作。
 
  
 
@@ -33,7 +33,7 @@
 ## <a name="prerequisites"></a>必要條件 ##
 
 此範例需要下列項目：  
-* 來自 Apple 的 [Xcode](https://developer.apple.com/xcode/downloads/)
+* 來自 Apple 的 [XCode](https://developer.apple.com/xcode/downloads/)
 * 安裝 [CocoaPods](https://guides.cocoapods.org/using/using-cocoapods.html) 做為相依性管理員。
 * Microsoft 工作或個人電子郵件帳戶，例如 Office 365，或 outlook.com、hotmail.com 等等。您可以註冊 [Office 365 開發人員訂用帳戶](https://aka.ms/devprogramsignup)，其中包含開始建置 Office 365 應用程式所需的資源。
 * 已註冊應用程式的用戶端識別碼，來自 [Microsoft Graph 應用程式註冊入口網站](https://graph.microsoft.io/en-us/app-registration)
@@ -42,7 +42,7 @@
 
       
 <a name="register"></a>
-##<a name="register-and-configure-the-app"></a>註冊和設定應用程式
+## <a name="register-and-configure-the-app"></a>註冊和設定應用程式
 
 1. 使用您的個人或工作或學校帳戶登入[應用程式註冊入口網站](https://apps.dev.microsoft.com/)。  
 2. 選取 [新增應用程式]****。  
@@ -66,7 +66,7 @@
 4. 新增 **com.microsoft.iOS-objectivec-snippets-sample** 到金鑰鏈群組。
 
 <a name="build"></a>
-## <a name="build-and-debug"></a>建置和偵錯 ##
+## <a name="build-and-debug"></a>建置和偵錯  
 
 1. 複製此儲存機制
 2. 使用 CocoaPods 來匯入 Microsoft Graph SDK 和驗證相依性：
@@ -124,7 +124,7 @@
 這個範例會執行命令，該命令會建立、讀取、更新或刪除資料。當執行刪除或編輯資料的命令時，範例會建立測試實體。這個範例會在您的租用戶上留下部分實體。
 
 <a name="contributing"></a>
-## <a name="contributing"></a>參與 ##
+## <a name="contributing"></a>參與  
 
 如果您想要參與這個範例，請參閱 [CONTRIBUTING.MD](/CONTRIBUTING.md)。
 
@@ -138,7 +138,7 @@
 我們很重視您的意見。請透過 [Stack Overflow](http://stackoverflow.com/questions/tagged/office365+or+microsoftgraph) 與我們連絡。以 [MicrosoftGraph] 標記您的問題。
 
 <a name="additional-resources"></a>
-## <a name="additional-resources"></a>其他資源 ##
+## <a name="additional-resources"></a>其他資源  
 
 - [Microsoft Graph 概觀](http://graph.microsoft.io)
 - [Office 開發人員程式碼範例](http://dev.office.com/code-samples)
