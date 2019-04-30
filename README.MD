@@ -1,4 +1,10 @@
-# Microsoft Graph iOS Objective C Snippets Sample
+# [ARCHIVED] Microsoft Graph iOS Objective C Snippets Sample
+
+## IMPORTANT
+
+**This project is being archived. As part of the archival process, we're closing all open issues and pull requests. For a current Objective-C sample, see [ios-objectivec-connect-sample](https://github.com/microsoftgraph/ios-objectivec-connect-sample)**
+
+**You can continue to use this sample "as-is", but it won't be maintained moving forward. We apologize for any inconvenience.**
 
 **Table of contents**
 
